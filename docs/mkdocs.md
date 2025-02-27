@@ -18,7 +18,8 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Deploy to Github
 
-~~~
+~~~sh
+
 #!/bin/bash
 
 # Check if a site name is provided
