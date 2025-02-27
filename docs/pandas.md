@@ -2,7 +2,6 @@
 
 ## Stock Data
 
-
 Here’s a step-by-step guide with Python code to scrape the **S&P 500 stocks** from Wikipedia and use the `yfinance` library to retrieve stock information, historical data, financial statements, holders, and dividend activity.
 
 ---
@@ -162,12 +161,15 @@ print(stock_data)
 ---
 
 ### **Required Libraries**
+
 Install the necessary libraries:
+
 ```bash
 pip install pandas yfinance lxml
 ```
 
 This script covers fetching:
+
 1. **S&P 500 tickers** from Wikipedia.
 2. **Historical data** for selected stocks.
 3. **Info, financials, holders, and dividends** for a single ticker or a batch of tickers.
