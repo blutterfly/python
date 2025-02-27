@@ -25,7 +25,7 @@ theme:
         name: Switch to dark mode
   icon:
     # Example: Use some Material icons
-    logo: assets/images/butterfly.svg
+    logo: material/language-python
     repo: fontawesome/brands/github
   extra_css:
     - overrides/extra.css  
