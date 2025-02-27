@@ -1,4 +1,4 @@
-# **Code Examples**
+# Code Examples
 
 ## Data Structures
 
@@ -6,100 +6,116 @@ Here’s a tutorial introducing Python data structures like lists, dictionaries,
 
 ---
 
-## **Data Structures in Python**
+## Data Structures in Python
 
-### **1. Lists**
+### 1. Lists
+
 Lists are used to store multiple items in a single variable.
 
-**Creating a List**
+Creating a List
+
 ```python
 fruits = ["apple", "banana", "cherry"]
 print(fruits)
 ```
 
-**Accessing Items**
+Accessing Items
+
 ```python
 print(fruits[0])  # First item
 print(fruits[-1])  # Last item
 ```
 
-**Modifying Lists**
+Modifying Lists
+
 ```python
 fruits.append("orange")  # Add an item
 fruits[1] = "blueberry"  # Change an item
 print(fruits)
 ```
 
-**Iterating Through a List**
+Iterating Through a List
+
 ```python
 for fruit in fruits:
     print(fruit)
 ```
 
-**Common List Methods**
+Common List Methods
+
 - `append(item)`: Add an item
 - `remove(item)`: Remove an item
 - `len(list)`: Get the number of items
 - `sort()`: Sort the list
 
-**Exercise:**
+Exercise:
+
 1. Create a list of your favorite hobbies.
 2. Add a new hobby to the list.
 3. Print each hobby using a loop.
 
 ---
 
-### **2. Dictionaries**
+### 2. Dictionaries
+
 Dictionaries store data in key-value pairs.
 
- **Creating a Dictionary**
+  Creating a Dictionary
+
 ```python
 student = {"name": "Alex", "age": 16, "grade": "A"}
 print(student)
 ```
 
- **Accessing Items**
+  Accessing Items
+
 ```python
 print(student["name"])  # Access value by key
 ```
 
- **Adding/Updating Keys**
+  Adding/Updating Keys
+
 ```python
 student["school"] = "High School"  # Add a new key
 student["grade"] = "A+"  # Update value
 print(student)
 ```
 
- **Iterating Through a Dictionary**
+  Iterating Through a Dictionary
+
 ```python
 for key, value in student.items():
     print(key, ":", value)
 ```
 
- **Common Dictionary Methods**
+  Common Dictionary Methods
+
 - `keys()`: Get all keys
 - `values()`: Get all values
 - `items()`: Get all key-value pairs
 
- **Exercise:**
+  Exercise:
+
 1. Create a dictionary with details about your favorite book (title, author, year).
 2. Add a new key for the genre.
 3. Print all the keys and values.
 
 ---
 
-### **3. DataFrames (Using pandas)**
+### 3. DataFrames (Using pandas)
 
-**What is a DataFrame?**
+ What is a DataFrame?
 A DataFrame is a 2-dimensional table-like data structure in the pandas library. Think of it as a spreadsheet.
 
- **Setting Up pandas**
+  Setting Up pandas
 Make sure you have pandas installed:
+
 ```bash
 pip install pandas
 ```
 
- **Creating a DataFrame**
+  Creating a DataFrame
+
 ```python
 import pandas as pd
 
@@ -113,37 +129,42 @@ df = pd.DataFrame(data)
 print(df)
 ```
 
- **Accessing Columns**
+  Accessing Columns
+
 ```python
 print(df["Name"])  # Access a single column
 print(df[["Name", "Age"]])  # Access multiple columns
 ```
 
- **Filtering Rows**
+  Filtering Rows
+
 ```python
 print(df[df["Age"] > 16])  # Students older than 16
 ```
 
- **Adding a New Column**
+  Adding a New Column
+
 ```python
 df["Passed"] = [True, False, True]
 print(df)
 ```
 
- **Iterating Through Rows**
+  Iterating Through Rows
+
 ```python
 for index, row in df.iterrows():
     print(row["Name"], "is", row["Age"], "years old.")
 ```
 
- **Exercise:**
+  Exercise:
+
 1. Create a DataFrame with data about your favorite movies (columns: Title, Year, Genre).
 2. Add a new column for Rating.
 3. Filter the movies to show only those released after 2010.
 
 ---
 
-### **4. Comparing Lists, Dictionaries, and DataFrames**
+### 4. Comparing Lists, Dictionaries, and DataFrames
 
 | Feature            | List                     | Dictionary               | DataFrame             |
 |---------------------|--------------------------|--------------------------|-----------------------|
@@ -153,15 +174,17 @@ for index, row in df.iterrows():
 
 ---
 
-### **5. Final Project Idea: Student Report System**
+### 5. Final Project Idea: Student Report System
 
 Build a system that:
+
 1. Stores student data in a DataFrame.
 2. Allows adding a new student (Name, Age, Grade).
 3. Filters students by a minimum grade.
 4. Prints all student data.
 
  Example Code for the System:
+
 ```python
 import pandas as pd
 
@@ -182,22 +205,20 @@ print("Students with grade A or higher:")
 print(df[df["Grade"] >= "A"])
 ```
 
-Let me know if you’d like additional examples or explanations!
-
-
 ## File IO
 
 Here’s a tutorial on writing, saving, and reading files in Python, along with template functions for working with plain text, CSV, and JSON files.
 
 ---
 
-## **1. Plain Text File**
+## 1. Plain Text File
 
 Plain text files are the simplest type of file. You can write strings to them or read their content as text.
 
-### **Template Function for Plain Text Files**
+### Template Function for Plain Text Files
 
  Writing to a Plain Text File
+
 ```python
 def write_to_text_file(file_path, text):
     with open(file_path, 'w') as file:  # Open file in write mode
@@ -205,6 +226,7 @@ def write_to_text_file(file_path, text):
 ```
 
  Reading from a Plain Text File
+
 ```python
 def read_from_text_file(file_path):
     with open(file_path, 'r') as file:  # Open file in read mode
@@ -212,6 +234,7 @@ def read_from_text_file(file_path):
 ```
 
  Example Usage
+
 ```python
 write_to_text_file('example.txt', 'Hello, World!')
 content = read_from_text_file('example.txt')
@@ -220,13 +243,14 @@ print(content)
 
 ---
 
-## **2. CSV File**
+## 2. CSV File
 
 CSV (Comma-Separated Values) files are used to store tabular data.
 
-### **Template Function for CSV Files**
+### Template Function for CSV Files
 
  Writing to a CSV File
+
 ```python
 import csv
 
@@ -237,6 +261,7 @@ def write_to_csv(file_path, data):
 ```
 
  Reading from a CSV File
+
 ```python
 def read_from_csv(file_path):
     with open(file_path, 'r') as file:  # Open file in read mode
@@ -245,6 +270,7 @@ def read_from_csv(file_path):
 ```
 
  Example Usage
+
 ```python
 data = [
     ['Name', 'Age', 'Grade'],
@@ -260,13 +286,14 @@ for row in content:
 
 ---
 
-## **3. JSON File**
+## 3. JSON File
 
 JSON (JavaScript Object Notation) is used to store structured data, such as dictionaries or lists.
 
-### **Template Function for JSON Files**
+### Template Function for JSON Files
 
  Writing to a JSON File
+
 ```python
 import json
 
@@ -276,6 +303,7 @@ def write_to_json(file_path, data):
 ```
 
  Reading from a JSON File
+
 ```python
 def read_from_json(file_path):
     with open(file_path, 'r') as file:  # Open file in read mode
@@ -283,6 +311,7 @@ def read_from_json(file_path):
 ```
 
  Example Usage
+
 ```python
 data = {
     'students': [
@@ -298,7 +327,7 @@ print(content)
 
 ---
 
-### **Summary of File Types**
+### Summary of File Types
 
 | File Type | Python Module | Best for                          |
 |-----------|---------------|------------------------------------|
@@ -307,5 +336,3 @@ print(content)
 | JSON      | `json`         | Structured data (hierarchical)   |
 
 Each of these functions can be adapted based on specific requirements. Let me know if you'd like further customizations or examples!
-
-
