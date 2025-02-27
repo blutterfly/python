@@ -1,0 +1,62 @@
+site_name: "Python"
+site_description: "Documentation, quick reference, best practices and code. "
+site_url: "https://blutterfly.github.io/python"  # Replace with your URL if desired
+
+# -------------
+# THEME
+# -------------
+theme:
+  name: material
+  # The next lines are optional; they showcase some recommended settings:
+  features:
+    - navigation.instant          # Dynamic navigation within a single page
+    - navigation.tracking         # Tracks your scroll position
+    - toc.integrate               # Integrates ToC into the main navigation for the current page
+  palette:
+    # Example: lighten/darken or define your own theme colors
+    - scheme: default
+      primary: yellow
+      accent: pink
+    - scheme: slate
+      primary: yellow
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  icon:
+    # Example: Use some Material icons
+    logo: material/flask
+    repo: fontawesome/brands/github
+  extra_css:
+    - overrides/extra.css  
+
+# -------------
+# NAVIGATION
+# -------------
+nav:
+  - Home: index.md
+  - Pandas: pandas.md
+  - Code Examples: codex.md
+  - Medium Articles: medium.md
+  - Mkdocs: mkdocs.md
+  
+
+# -------------
+# PLUGINS
+# -------------
+plugins:
+  - search
+  # Material provides many additional plugins/features. 
+  # For dynamic Table of Contents (instant navigation), you can also add:
+  #  - mkdocs-material
+  # Or advanced features like:
+  #  - mkdocs-awesome-pages-plugin 
+  #  - mkdocs-git-revision-date-localized-plugin 
+  # etc.
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - toc:
+      permalink: true
