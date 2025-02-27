@@ -15,17 +15,17 @@ theme:
   palette:
     # Example: lighten/darken or define your own theme colors
     - scheme: default
-      primary: yellow
+      primary: blue
       accent: pink
     - scheme: slate
-      primary: yellow
+      primary: blue
       accent: pink
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
   icon:
     # Example: Use some Material icons
-    logo: material/flask
+    logo: assets/images/butterfly.svg
     repo: fontawesome/brands/github
   extra_css:
     - overrides/extra.css  
