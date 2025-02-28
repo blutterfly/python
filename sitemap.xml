@@ -2,22 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://blutterfly.github.io/python/</loc>
-         <lastmod>2025-02-27</lastmod>
+         <lastmod>2025-02-28</lastmod>
     </url>
     <url>
-         <loc>https://blutterfly.github.io/python/codex/</loc>
-         <lastmod>2025-02-27</lastmod>
+         <loc>https://blutterfly.github.io/python/examples/</loc>
+         <lastmod>2025-02-28</lastmod>
+    </url>
+    <url>
+         <loc>https://blutterfly.github.io/python/examples/data_structures/</loc>
+         <lastmod>2025-02-28</lastmod>
+    </url>
+    <url>
+         <loc>https://blutterfly.github.io/python/examples/dictionary_best_practice/</loc>
+         <lastmod>2025-02-28</lastmod>
+    </url>
+    <url>
+         <loc>https://blutterfly.github.io/python/examples/f_strings/</loc>
+         <lastmod>2025-02-28</lastmod>
+    </url>
+    <url>
+         <loc>https://blutterfly.github.io/python/examples/list_example/</loc>
+         <lastmod>2025-02-28</lastmod>
+    </url>
+    <url>
+         <loc>https://blutterfly.github.io/python/examples/re/</loc>
+         <lastmod>2025-02-28</lastmod>
+    </url>
+    <url>
+         <loc>https://blutterfly.github.io/python/examples/stocks_data/</loc>
+         <lastmod>2025-02-28</lastmod>
     </url>
     <url>
          <loc>https://blutterfly.github.io/python/medium/</loc>
-         <lastmod>2025-02-27</lastmod>
+         <lastmod>2025-02-28</lastmod>
+    </url>
+    <url>
+         <loc>https://blutterfly.github.io/python/medium/tree/</loc>
+         <lastmod>2025-02-28</lastmod>
     </url>
     <url>
          <loc>https://blutterfly.github.io/python/mkdocs/</loc>
-         <lastmod>2025-02-27</lastmod>
+         <lastmod>2025-02-28</lastmod>
     </url>
     <url>
          <loc>https://blutterfly.github.io/python/pandas/</loc>
-         <lastmod>2025-02-27</lastmod>
+         <lastmod>2025-02-28</lastmod>
     </url>
 </urlset>
