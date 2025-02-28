@@ -11,7 +11,7 @@ theme:
   features:
     - navigation.instant          # Dynamic navigation within a single page
     - navigation.tracking         # Tracks your scroll position
-    - toc.integrate               # Integrates ToC into the main navigation for the current page
+    # - toc.integrate               # Integrates ToC into the main navigation for the current page
   palette:
     # Example: lighten/darken or define your own theme colors
     - scheme: default
@@ -35,10 +35,19 @@ theme:
 # -------------
 nav:
   - Home: index.md
-  - Pandas: pandas.md
-  - Code Examples: codex.md
-  - Medium Articles: medium.md
-  - Mkdocs: mkdocs.md
+  - Pandas: pandas/index.md
+  - Examples: 
+      - examples/index.md
+      - Data Structures: examples/data_structures.md
+      - Dictionary Best Practice: examples/dictionary_best_practice.md
+      - F Strings: examples/f_strings.md
+      - List Example: examples/list_example.md
+      - Regular Expressions: examples/re.md
+      - Stocks Data: examples/stocks_data.md
+  - Medium Articles: 
+      - medium/index.md
+      - Tree: medium/tree.md
+  - Mkdocs: mkdocs/index.md
   
 
 # -------------
@@ -46,6 +55,8 @@ nav:
 # -------------
 plugins:
   - search
+#  - include-markdown
+#  - macros
   # Material provides many additional plugins/features. 
   # For dynamic Table of Contents (instant navigation), you can also add:
   #  - mkdocs-material
@@ -60,3 +71,4 @@ markdown_extensions:
   - footnotes
   - toc:
       permalink: true
+      toc_depth: 2-4
