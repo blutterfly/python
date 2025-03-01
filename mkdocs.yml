@@ -39,9 +39,10 @@ nav:
   - Examples: 
       - examples/index.md
       - Data Structures: examples/data_structures.md
-      - Dictionary Best Practice: examples/dictionary_best_practice.md
+      - Dictionary: examples/dictionary.md
+      - List Example: examples/list.md
+      - File IO: examples/file_io.md
       - F Strings: examples/f_strings.md
-      - List Example: examples/list_example.md
       - Regular Expressions: examples/re.md
       - Stocks Data: examples/stocks_data.md
   - Medium Articles: 

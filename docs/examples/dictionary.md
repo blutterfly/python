@@ -1,4 +1,8 @@
-## Dictionary Best Practice
+# Dictionary
+
+## Best Practices
+
+Various best practices on dictionary
 
 ~~~python
 ### Checking if a key exists
